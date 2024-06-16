@@ -396,25 +396,25 @@ header .right {
 
 /* TEAM */
 
-.members {
+.expertises {
     display: flex;
     gap: 3rem;
 }
 
-.member:nth-child(2),
-.member:nth-child(4) {
+.expertise:nth-child(2),
+.expertise:nth-child(4) {
     margin-top: 5rem;
 }
 
-.member__img {
+.expertise__img {
     margin-bottom: 1rem;
 }
 
-.member__content h1 {
+.expertise__content h1 {
     margin-bottom: 0.25rem;
 }
 
-.member__content p {
+.expertise__content p {
     opacity: 0.4;
     font-weight: 600;
 }
@@ -756,6 +756,7 @@ footer {
 
     .hero__content .btn {
         margin: 0 auto;
+        margin-bottom: 2rem;
     }
 
     .hero__img {
@@ -815,16 +816,16 @@ footer {
 
     /* TEAM */
 
-    .members{
+    .expertises{
         flex-direction: column;
         text-align: center;
     }
 
-    .member{
+    .expertise{
         margin: 0 !important;
     }
 
-    .member__img img{
+    .expertise__img img{
         max-width: 300px;
     }
 
