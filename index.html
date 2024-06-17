@@ -54,7 +54,7 @@
         </ul>
       </nav>
       <div class="right flex-center">
-        <a href="#contact" class="btn btn-secondary">Obtenir Un Devis</a>
+        <a href="#" class="btn btn-secondary" id="openModalLink">Tarification rapide</a>
         <div class="menu-btn">
           <i class="fas fa-bars"></i>
         </div>
@@ -63,7 +63,21 @@
   </header>
 
   <!-- HEADER -->
-
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <form id="quoteForm">
+        <label for="name">Nom complet:</label>
+        <input type="text" id="name" name="name" required><br>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br>
+        <label for="message">Numero de telephone:</label>
+        <input type="text" id="phone" name="phone" required><br>
+        <button type="submit" class="btn btn-secondary">Envoyer</button>
+      </form>
+    </div>
+  </div>
   <!-- HERO -->
   <section id="hero" class="container flex-row">
     <div class="hero__content" data-aos="fade-up">
@@ -85,36 +99,45 @@
   <!-- ABOUT -->
   <section class="container flex-center flex-column" id="about">
     <h5 class="section-subheading" data-aos="fade-up">Notre Mission</h5>
-    <h2 class="section-heading text-center" data-aos="fade-up" data-aos-delay="100">Un Partenaire pour Votre Croissance Digitale</h2>
+    <h2 class="section-heading text-center" data-aos="fade-up" data-aos-delay="100">Un Partenaire pour Votre Croissance
+      Digitale</h2>
     <div class="features text-center">
       <div class="feature" style="--color:#fe6786" data-aos="fade-right">
         <div class="feature__icon">
           <i class="fa-regular fa-window-maximize"></i>
         </div>
         <h3 class="featue_title">Solutions de développement web sur mesure</h3>
-        <p class="feature__text">Nous concevons des sites web performants et adaptatifs, parfaitement alignés avec vos objectifs</p>
+        <p class="feature__text">Nous concevons des sites web performants et adaptatifs, parfaitement alignés avec vos
+          objectifs</p>
       </div>
       <div class="feature" style="--color:#5cd8a5" data-aos="fade-up" data-aos-delay="100">
         <div class="feature__icon">
           <i class="fa-solid fa-mobile-screen-button"></i>
         </div>
         <h3 class="featue_title">Applications mobiles innovantes pour Android et iOS</h3>
-        <p class="feature__text">Nos applications mobiles sont conçues pour offrir une expérience utilisateur optimale sur toutes les plateformes</p>
+        <p class="feature__text">Nos applications mobiles sont conçues pour offrir une expérience utilisateur optimale
+          sur toutes les plateformes</p>
       </div>
       <div class="feature" style="--color:#fea95b" data-aos="fade-left" data-aos-delay="200">
         <div class="feature__icon">
           <i class="fa-solid fa-globe"></i>
         </div>
         <h3 class="featue_title">Solutions Digitales</h3>
-        <p class="feature__text">Automatisez et optimisez vos processus d'affaires avec nos solutions digitales intégrées, garantissant une meilleure efficacité et une réduction des coûts</p>
+        <p class="feature__text">Automatisez et optimisez vos processus d'affaires avec nos solutions digitales
+          intégrées, garantissant une meilleure efficacité et une réduction des coûts</p>
       </div>
     </div>
     <div class="about__details flex-center">
       <div class="about__details-content" data-aos="fade-right" data-aos-delay="300">
         <h1>Pourquoi Choisir Webbin ?</h1>
-        <p>Chez Webbin, nous nous engageons à transformer vos idées en solutions digitales performantes et sur mesure. Spécialisés dans le développement de solutions web et mobiles, nous comprenons les défis uniques des entreprises et des startups en Afrique et en Europe. Notre mission est de vous accompagner dans votre croissance en utilisant des technologies avancées et une approche centrée sur le client.</p>
+        <p>Chez Webbin, nous nous engageons à transformer vos idées en solutions digitales performantes et sur mesure.
+          Spécialisés dans le développement de solutions web et mobiles, nous comprenons les défis uniques des
+          entreprises et des startups en Afrique et en Europe. Notre mission est de vous accompagner dans votre
+          croissance en utilisant des technologies avancées et une approche centrée sur le client.</p>
         <br>
-        <p>Avec Webbin, vous bénéficiez d'un partenaire de confiance dédié à la réussite de vos projets numériques. Notre expertise et notre engagement vous garantissent des solutions innovantes et adaptées à vos besoins spécifiques. Rejoignez-nous pour propulser votre entreprise vers de nouveaux sommets.</p>
+        <p>Avec Webbin, vous bénéficiez d'un partenaire de confiance dédié à la réussite de vos projets numériques.
+          Notre expertise et notre engagement vous garantissent des solutions innovantes et adaptées à vos besoins
+          spécifiques. Rejoignez-nous pour propulser votre entreprise vers de nouveaux sommets.</p>
         <a href="#contact" class="btn btn-primary" data-aos="zoom-in" data-aos-delay="400">Commencer Dès Maintenant</a>
       </div>
       <div class="about__details-img" data-aos="fade-left" data-aos-delay="500">
@@ -131,69 +154,69 @@
   background-position: top;
   background-size: 100% 80%;
 ">
-  <div class="container">
-    <h5 class="section-subheading" data-aos="fade-up">Nos Services Clés</h5>
-    <h2 class="section-heading right" data-aos="fade-up" data-aos-delay="100">Découvrez Nos Solutions Digitales</h2>
-    <div class="services">
-      <div class="service" data-aos="fade-right" data-aos-delay="200">
-        <div class="service__icon">
-          <img src="assets/img/squares.png" alt="">
+    <div class="container">
+      <h5 class="section-subheading" data-aos="fade-up">Nos Services Clés</h5>
+      <h2 class="section-heading right" data-aos="fade-up" data-aos-delay="100">Découvrez Nos Solutions Digitales</h2>
+      <div class="services">
+        <div class="service" data-aos="fade-right" data-aos-delay="200">
+          <div class="service__icon">
+            <img src="assets/img/squares.png" alt="">
+          </div>
+          <h3 class="service__title">Développement Web</h3>
+          <p class="service__text">
+            Création de sites web modernes et adaptatifs, optimisés pour la performance et l'expérience utilisateur.
+          </p>
         </div>
-        <h3 class="service__title">Développement Web</h3>
-        <p class="service__text">
-          Création de sites web modernes et adaptatifs, optimisés pour la performance et l'expérience utilisateur.
-        </p>
-      </div>
-      <div class="service" data-aos="fade-up" data-aos-delay="300">
-        <div class="service__icon">
-          <img src="assets/img/upload.png" alt="">
+        <div class="service" data-aos="fade-up" data-aos-delay="300">
+          <div class="service__icon">
+            <img src="assets/img/upload.png" alt="">
+          </div>
+          <h3 class="service__title">Applications Mobiles</h3>
+          <p class="service__text">
+            Développement d'applications mobiles natives et hybrides pour iOS et Android, offrant une expérience fluide.
+          </p>
         </div>
-        <h3 class="service__title">Applications Mobiles</h3>
-        <p class="service__text">
-          Développement d'applications mobiles natives et hybrides pour iOS et Android, offrant une expérience fluide.
-        </p>
-      </div>
-      <div class="service" data-aos="fade-left" data-aos-delay="400">
-        <div class="service__icon">
-          <img src="assets/img/video-camera.png" alt="">
+        <div class="service" data-aos="fade-left" data-aos-delay="400">
+          <div class="service__icon">
+            <img src="assets/img/video-camera.png" alt="">
+          </div>
+          <h3 class="service__title">Design UX/UI</h3>
+          <p class="service__text">
+            Conception d'interfaces utilisateur intuitives et esthétiques pour améliorer l'engagement et la satisfaction
+            des utilisateurs.
+          </p>
         </div>
-        <h3 class="service__title">Design UX/UI</h3>
-        <p class="service__text">
-          Conception d'interfaces utilisateur intuitives et esthétiques pour améliorer l'engagement et la satisfaction
-          des utilisateurs.
-        </p>
-      </div>
-      <div class="service" data-aos="fade-right" data-aos-delay="500">
-        <div class="service__icon">
-          <img src="assets/img/shopping-cart.png" alt="">
+        <div class="service" data-aos="fade-right" data-aos-delay="500">
+          <div class="service__icon">
+            <img src="assets/img/shopping-cart.png" alt="">
+          </div>
+          <h3 class="service__title">Solutions E-commerce</h3>
+          <p class="service__text">
+            Développement de plateformes e-commerce robustes et sécurisées, adaptées à vos besoins commerciaux.
+          </p>
         </div>
-        <h3 class="service__title">Solutions E-commerce</h3>
-        <p class="service__text">
-          Développement de plateformes e-commerce robustes et sécurisées, adaptées à vos besoins commerciaux.
-        </p>
-      </div>
-      <div class="service" data-aos="fade-up" data-aos-delay="600">
-        <div class="service__icon">
-          <img src="assets/img/placeholder.png" alt="">
+        <div class="service" data-aos="fade-up" data-aos-delay="600">
+          <div class="service__icon">
+            <img src="assets/img/placeholder.png" alt="">
+          </div>
+          <h3 class="service__title">Intégration API</h3>
+          <p class="service__text">
+            Intégration et développement d'API pour connecter et automatiser vos systèmes et services.
+          </p>
         </div>
-        <h3 class="service__title">Intégration API</h3>
-        <p class="service__text">
-          Intégration et développement d'API pour connecter et automatiser vos systèmes et services.
-        </p>
-      </div>
-      <div class="service" data-aos="fade-left" data-aos-delay="700">
-        <div class="service__icon">
-          <img src="assets/img/headphones.png" alt="">
+        <div class="service" data-aos="fade-left" data-aos-delay="700">
+          <div class="service__icon">
+            <img src="assets/img/headphones.png" alt="">
+          </div>
+          <h3 class="service__title">Support & Maintenance</h3>
+          <p class="service__text">
+            Services de support et de maintenance pour garantir la performance et la sécurité continues de vos solutions
+            digitales.
+          </p>
         </div>
-        <h3 class="service__title">Support & Maintenance</h3>
-        <p class="service__text">
-          Services de support et de maintenance pour garantir la performance et la sécurité continues de vos solutions
-          digitales.
-        </p>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- SERVICES -->
 
   <!-- PROJECTS -->
@@ -204,62 +227,63 @@
   background-size: 100% 100%;
   background-attachment: fixed;
 ">
-  <div class="container">
-    <h5 class="section-subheading" data-aos="fade-up">Projets : Un Exemple Concret</h5>
-    <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">Innovation en Action</h2>
-    <div class="projects">
-      <div class="project" data-aos="fade-right" data-aos-delay="200">
-        <div class="project__img">
-          <img src="assets/img/project-1.png" />
+    <div class="container">
+      <h5 class="section-subheading" data-aos="fade-up">Projets : Un Exemple Concret</h5>
+      <h2 class="section-heading" data-aos="fade-up" data-aos-delay="100">Innovation en Action</h2>
+      <div class="projects">
+        <div class="project" data-aos="fade-right" data-aos-delay="200">
+          <div class="project__img">
+            <img src="assets/img/project-1.png" />
+          </div>
+          <div class="project__content">
+            <h3 class="project__category">Vue d'ensemble</h3>
+            <h3 class="project__title">Site Web pour Agence de Courtage d'Assurance</h3>
+            <p class="project__text">
+              Développement d'un site web performant et intuitif pour une agence de courtage d'assurance, incluant des
+              fonctionnalités de remplissage automatique des informations, de demande d'appel instantané et de lecture
+              des actualités des assurances en France.
+            </p>
+          </div>
         </div>
-        <div class="project__content">
-          <h3 class="project__category">Vue d'ensemble</h3>
-          <h3 class="project__title">Site Web pour Agence de Courtage d'Assurance</h3>
-          <p class="project__text">
-            Développement d'un site web performant et intuitif pour une agence de courtage d'assurance, incluant des
-            fonctionnalités de remplissage automatique des informations, de demande d'appel instantané et de lecture
-            des actualités des assurances en France.
-          </p>
+        <div class="project" data-aos="fade-up" data-aos-delay="300">
+          <div class="project__img">
+            <img src="assets/img/project-2.png" />
+          </div>
+          <div class="project__content">
+            <h3 class="project__category">Notre Valeur Ajoutée</h3>
+            <h3 class="project__title">Amélioration de l'Experience de l'Utilisateur</h3>
+            <p class="project__text">
+              Amélioration de la satisfaction du client et de la conversion d'un visiteur en client grâce à la
+              diminution du temps de remplissage du formulaire par la génération automatique des informations de ce
+              dernier à partir de la base de données officielle des entreprises en France.
+            </p>
+          </div>
         </div>
-      </div>
-      <div class="project" data-aos="fade-up" data-aos-delay="300">
-        <div class="project__img">
-          <img src="assets/img/project-2.png" />
-        </div>
-        <div class="project__content">
-          <h3 class="project__category">Notre Valeur Ajoutée</h3>
-          <h3 class="project__title">Amélioration de l'Experience de l'Utilisateur</h3>
-          <p class="project__text">
-            Amélioration de la satisfaction du client et de la conversion d'un visiteur en client grâce à la
-            diminution du temps de remplissage du formulaire par la génération automatique des informations de ce
-            dernier à partir de la base de données officielle des entreprises en France.
-          </p>
-        </div>
-      </div>
-      <div class="project" data-aos="fade-left" data-aos-delay="400">
-        <div class="project__img">
-          <img src="assets/img/project-3.png" />
-        </div>
-        <div class="project__content">
-          <h3 class="project__category">Impact Mesuré</h3>
-          <h3 class="project__title">Résultats et Bénéfices</h3>
-          <p class="project__text">
-            Nous avons optimisé l'expérience utilisateur en intégrant des fonctionnalités de
-            remplissage automatique des formulaires et de demande d'appel instantané, ainsi qu'un flux d'actualités
-            sur les assurances en France, ce qui a amélioré la satisfaction client et augmenté les conversions.
-          </p>
+        <div class="project" data-aos="fade-left" data-aos-delay="400">
+          <div class="project__img">
+            <img src="assets/img/project-3.png" />
+          </div>
+          <div class="project__content">
+            <h3 class="project__category">Impact Mesuré</h3>
+            <h3 class="project__title">Résultats et Bénéfices</h3>
+            <p class="project__text">
+              Nous avons optimisé l'expérience utilisateur en intégrant des fonctionnalités de
+              remplissage automatique des formulaires et de demande d'appel instantané, ainsi qu'un flux d'actualités
+              sur les assurances en France, ce qui a amélioré la satisfaction client et augmenté les conversions.
+            </p>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- PROJECTS -->
 
   <!-- EXPERTISE -->
 
   <section id="expertises" class="container">
     <h5 class="section-subheading text-center" data-aos="fade-up">Ce Que Nous Utilisons</h5>
-    <h2 class="section-heading right left text-center" data-aos="fade-up" data-aos-delay="100">Des Caractéristiques Innovantes pour des Résultats Remarquables</h2>
+    <h2 class="section-heading right left text-center" data-aos="fade-up" data-aos-delay="100">Des Caractéristiques
+      Innovantes pour des Résultats Remarquables</h2>
     <div class="expertises">
       <div class="expertise" data-aos="fade-right" data-aos-delay="200">
         <div class="expertise__img">
@@ -310,99 +334,101 @@
   background-position: right;
   background-size: 100%;
 ">
-  <div class="container flex-row">
-    <div class="testimonials-wrapper" data-aos="fade-right">
-      <p class="quotes">
-        <i class="fas fa-quote-left"></i>
-      </p>
-      <p class="section-subheading">
-        TÉMOIGNAGE
-      </p>
+    <div class="container flex-row">
+      <div class="testimonials-wrapper" data-aos="fade-right">
+        <p class="quotes">
+          <i class="fas fa-quote-left"></i>
+        </p>
+        <p class="section-subheading">
+          TÉMOIGNAGE
+        </p>
 
-      <div class="testimonials">
-        <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
-          <h1 class="testimonial__title">
-            Ils sont formidables
-          </h1>
-          <p class="testimonial__text">
-            Nous avons collaboré avec Webbin pour le développement de notre site web, et l'expérience a été
-            exceptionnelle. L'équipe a su comprendre nos besoins spécifiques et les traduire en solutions digitales
-            performantes. Grâce à leur expertise, nous avons non seulement amélioré la satisfaction de nos clients,
-            mais aussi augmenté nos conversions de manière significative. Le processus de développement a été fluide
-            et efficace, et le résultat final a dépassé nos attentes. Nous recommandons vivement Webbin pour toute
-            entreprise cherchant à transformer ses idées en réalité digitale.
-          </p>
-          <div class="testimonial__author">
-            <h3>Jean Dupont</h3>
-            <p>Développeur Web</p>
+        <div class="testimonials">
+          <div class="testimonial" data-aos="fade-up" data-aos-delay="100">
+            <h1 class="testimonial__title">
+              Ils sont formidables
+            </h1>
+            <p class="testimonial__text">
+              Nous avons collaboré avec Webbin pour le développement de notre site web, et l'expérience a été
+              exceptionnelle. L'équipe a su comprendre nos besoins spécifiques et les traduire en solutions digitales
+              performantes. Grâce à leur expertise, nous avons non seulement amélioré la satisfaction de nos clients,
+              mais aussi augmenté nos conversions de manière significative. Le processus de développement a été fluide
+              et efficace, et le résultat final a dépassé nos attentes. Nous recommandons vivement Webbin pour toute
+              entreprise cherchant à transformer ses idées en réalité digitale.
+            </p>
+            <div class="testimonial__author">
+              <h3>Jean Dupont</h3>
+              <p>Développeur Web</p>
+            </div>
           </div>
         </div>
+        <div class="testimonial-navigation" data-aos="fade-up" data-aos-delay="200">
+          <span class="active"></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
-      <div class="testimonial-navigation" data-aos="fade-up" data-aos-delay="200">
-        <span class="active"></span>
-        <span></span>
-        <span></span>
-      </div>
-    </div>
 
-    <div class="testimonials__img" data-aos="fade-left">
-      <img src="assets/img/testimonials.png" alt="">
+      <div class="testimonials__img" data-aos="fade-left">
+        <img src="assets/img/testimonials.png" alt="">
+      </div>
     </div>
-  </div>
-</section>
+  </section>
   <!-- TESTIMONIALS -->
 
   <!-- CONTACT -->
-
-  <section id="contact" style="
-  background: url(assets/img/contact-bg.png);
-  background-repeat: no-repeat;
-  background-position: right;
-  background-size: contain;
-">
-  <div class="container">
-    <h1 class="section-subheading text-center" data-aos="fade-up">CONTACTEZ-NOUS</h1>
-    <h2 class="section-heading text-center left right" data-aos="fade-up" data-aos-delay="100">
-      Restez Connectés avec Nous pour Toute Raison
-    </h2>
-    <div class="contact">
-      <form action="#" class="contact__form" data-aos="fade-right" data-aos-delay="200">
-        <h1>Écrivez-nous un message</h1>
-        <input type="text" name="name" placeholder="Votre Nom" id="" required>
-        <input type="email" placeholder="Votre Email" required>
-        <input type="text" name="" placeholder="Sujet" id="">
-        <textarea rows="5" required>Votre Message</textarea>
-        <button class="btn btn-primary">Envoyer le Message</button>
-      </form>
-      <div class="contact__details" data-aos="fade-left" data-aos-delay="300">
-        <p class="text">
-          Pour toute question ou demande, n'hésitez pas à nous contacter. Nous sommes à votre disposition pour vous
-          aider et répondre à vos besoins
-        </p>
-        <div class="details">
-          <div class="detail">
-            <div class="detail__icon">
-              <i class="fas fa-phone"></i>
+  <section id="contact"
+    style="background: url(assets/img/contact-bg.png); background-repeat: no-repeat; background-position: right; background-size: contain;">
+    <div class="container">
+      <h1 class="section-subheading text-center" data-aos="fade-up">DEMANDE DE DEVIS | CONTACTEZ-NOUS</h1>
+      <h2 class="section-heading text-center left right" data-aos="fade-up" data-aos-delay="100">
+        Obtenez Votre Devis Personnalisé
+      </h2>
+      <div class="contact">
+        <form id="quoteForm2" class="contact__form" data-aos="fade-right" data-aos-delay="200">
+          <h1>Remplir le formulaire Maintenant !</h1>
+          <input type="text" name="company_name" id="company_name" placeholder="Nom de Votre Entreprise" required>
+          <input type="text" name="name2" id="name2" placeholder="Votre Nom" required>
+          <input type="email" name="email2" id="email2" placeholder="Votre Email" required>
+          <input type="tel" name="phone2" id="phone2" placeholder="Numéro de Téléphone" required>
+          <select name="service_type" id="service_type"  required>
+            <option value="">Type de Service Requis</option>
+            <option value="web_development">Développement Web</option>
+            <option value="mobile_app">Applications Mobiles</option>
+            <option value="ux_ui_design">Design UX/UI</option>
+            <option value="ecommerce_solutions">Solutions E-commerce</option>
+            <option value="api_integration">Intégration API</option>
+            <option value="support_maintenance">Support & Maintenance</option>
+            <option value="autre">Autre</option>
+          </select>
+          <textarea name="project_description" id="project_description" rows="5" placeholder="Description du Projet" required></textarea>
+          <input type="text" name="budget"id="budget" placeholder="Vos Contraintes (Délais , Budget ... )" required>
+          <button type="submit" class="btn btn-primary">Envoyer la Demande de Devis</button>
+        </form>
+        <div class="contact__details" data-aos="fade-left" data-aos-delay="300">
+          <p class="text">Pour toute question ou demande, n'hésitez pas à nous contacter. Nous sommes à votre
+            disposition pour vous aider et répondre à vos besoins</p>
+          <div class="details">
+            <div class="detail">
+              <div class="detail__icon"><i class="fas fa-phone"></i></div>
+              <div class="detail__content">
+                <h3>Téléphone</h3>
+                <p>+212 6 78 81 62 95</p>
+              </div>
             </div>
-            <div class="detail__content">
-              <h3>Téléphone</h3>
-              <p>+212 6 78 81 62 95</p>
-            </div>
-          </div>
-          <div class="detail">
-            <div class="detail__icon">
-              <i class="fas fa-envelope"></i>
-            </div>
-            <div class="detail__content">
-              <h3>Email</h3>
-              <p>contact@webbin.services</p>
+            <div class="detail">
+              <div class="detail__icon"><i class="fas fa-envelope"></i></div>
+              <div class="detail__content">
+                <h3>Email</h3>
+                <p>contact@webbin.services</p>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
-  </div>
-</section>
+  </section>
+
 
   <!-- CONTACT -->
 
@@ -502,6 +528,13 @@
       offset: 200 // décalage en pixels par rapport au viewport
     })
   </script>
+
+  <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script src="assets/js/form-mail.js"></script>
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/mail.js"></script>
+
+
 </body>
 
 </html>
