@@ -349,23 +349,57 @@
               Ils sont formidables
             </h1>
             <p class="testimonial__text">
-              Nous avons collaboré avec Webbin pour le développement de notre site web, et l'expérience a été
-              exceptionnelle. L'équipe a su comprendre nos besoins spécifiques et les traduire en solutions digitales
-              performantes. Grâce à leur expertise, nous avons non seulement amélioré la satisfaction de nos clients,
-              mais aussi augmenté nos conversions de manière significative. Le processus de développement a été fluide
-              et efficace, et le résultat final a dépassé nos attentes. Nous recommandons vivement Webbin pour toute
-              entreprise cherchant à transformer ses idées en réalité digitale.
+              Collaborer avec Webbin a été une expérience remarquable. Leur équipe a montré un dévouement incroyable à
+              chaque étape du développement de notre site web. Ils ont su transformer nos idées en une solution digitale
+              performante et esthétique. Nos clients sont plus satisfaits, et nous avons vu une augmentation notable de
+              nos conversions. La communication avec Webbin était fluide, et ils ont toujours été disponibles pour
+              répondre à nos questions. Nous recommandons vivement Webbin à toute entreprise cherchant à améliorer sa
+              présence en ligne.
             </p>
             <div class="testimonial__author">
-              <h3>Jean Dupont</h3>
-              <p>Développeur Web</p>
+              <h3>Sophie Martin</h3>
+              <p>Responsable Marketing</p>
+            </div>
+          </div>
+          <div class="testimonial" data-aos="fade-up" data-aos-delay="100" style="display: none;">
+            <h1 class="testimonial__title">
+              Un excellent service
+            </h1>
+            <p class="testimonial__text">
+              Webbin nous a aidés à développer notre application mobile, et nous en sommes ravis. Leur expertise et leur
+              professionnalisme ont fait toute la différence. Ils ont su écouter nos besoins et proposer des solutions
+              innovantes qui ont dépassé nos attentes. Grâce à leur travail, nous avons pu offrir une expérience
+              utilisateur exceptionnelle à nos clients. La communication avec Webbin était fluide, et ils ont toujours
+              été disponibles pour répondre à nos questions. Nous recommandons leurs services à toute entreprise
+              cherchant à se développer numériquement.
+            </p>
+            <div class="testimonial__author">
+              <h3>Marie Claire</h3>
+              <p>Entrepreneur</p>
+            </div>
+          </div>
+          <div class="testimonial" data-aos="fade-up" data-aos-delay="100" style="display: none;">
+            <h1 class="testimonial__title">
+              Partenaire de confiance
+            </h1>
+            <p class="testimonial__text">
+              Nous avons travaillé avec Webbin sur plusieurs projets et leur approche est toujours professionnelle et
+              axée sur les résultats. Leur capacité à comprendre nos besoins et à proposer des solutions innovantes a
+              été essentielle à notre succès. Leur engagement à fournir un service de qualité supérieure est inégalé.
+              Ils sont toujours disponibles pour répondre à nos questions et s'assurer que nos projets se déroulent sans
+              problème. Nous recommandons vivement Webbin à toute entreprise cherchant à transformer ses idées en
+              réalité digitale.
+            </p>
+            <div class="testimonial__author">
+              <h3>Ahmed El-Mansouri</h3>
+              <p>CEO</p>
             </div>
           </div>
         </div>
         <div class="testimonial-navigation" data-aos="fade-up" data-aos-delay="200">
-          <span class="active"></span>
-          <span></span>
-          <span></span>
+          <span class="active" data-index="0"></span>
+          <span data-index="1"></span>
+          <span data-index="2"></span>
         </div>
       </div>
 
@@ -374,6 +408,33 @@
       </div>
     </div>
   </section>
+
+
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const testimonials = document.querySelectorAll('.testimonial');
+      const navSpans = document.querySelectorAll('.testimonial-navigation span');
+
+      navSpans.forEach((span, index) => {
+        span.addEventListener('click', () => {
+          // Remove active class from all spans
+          navSpans.forEach(s => s.classList.remove('active'));
+          // Add active class to the clicked span
+          span.classList.add('active');
+
+          // Hide all testimonials
+          testimonials.forEach(t => t.style.display = 'none');
+          // Show the selected testimonial
+          testimonials[index].style.display = 'block';
+        });
+      });
+    });
+  </script>
+
+
+
+
   <!-- TESTIMONIALS -->
 
   <!-- CONTACT -->
@@ -391,7 +452,7 @@
           <input type="text" name="name2" id="name2" placeholder="Votre Nom" required>
           <input type="email" name="email2" id="email2" placeholder="Votre Email" required>
           <input type="tel" name="phone2" id="phone2" placeholder="Numéro de Téléphone" required>
-          <select name="service_type" id="service_type"  required>
+          <select name="service_type" id="service_type" required>
             <option value="">Type de Service Requis</option>
             <option value="web_development">Développement Web</option>
             <option value="mobile_app">Applications Mobiles</option>
@@ -401,8 +462,9 @@
             <option value="support_maintenance">Support & Maintenance</option>
             <option value="autre">Autre</option>
           </select>
-          <textarea name="project_description" id="project_description" rows="5" placeholder="Description du Projet" required></textarea>
-          <input type="text" name="budget"id="budget" placeholder="Vos Contraintes (Délais , Budget ... )" required>
+          <textarea name="project_description" id="project_description" rows="5" placeholder="Description du Projet"
+            required></textarea>
+          <input type="text" name="budget" id="budget" placeholder="Vos Contraintes (Délais , Budget ... )" required>
           <button type="submit" class="btn btn-primary">Envoyer la Demande de Devis</button>
         </form>
         <div class="contact__details" data-aos="fade-left" data-aos-delay="300">
@@ -423,6 +485,23 @@
                 <p>contact@webbin.services</p>
               </div>
             </div>
+            <p>Suivez-nous</p>
+            <div class="detail">
+              
+              <a href="https://www.facebook.com/profile.php?id=61561361870842&_rdc=1&_rdr" target="_blank" class="facebook">
+                <i class="fab fa-facebook-f"></i>
+              </a>
+              <a href="https://x.com/Webbin_services" target="_blank" class="twitter">
+                <i class="fa-brands fa-x-twitter"></i>
+              </a>
+              <a href="https://www.instagram.com/_webbin/" target="_blank" class="instagram">
+                <i class="fab fa-instagram"></i>
+              </a>
+              <a href="#" class="linkedin">
+                <i class="fab fa-linkedin"></i>
+              </a>
+            </div>
+            
           </div>
         </div>
       </div>
@@ -445,6 +524,7 @@
             Pour toute question ou demande, n'hésitez pas à nous contacter. Nous sommes à votre disposition pour vous
             aider et répondre à vos besoins
           </p>
+          <!--
           <div class="footer__newsletter">
             <form action="#" class="footer__newsletter">
               <input type="email" name="" id="" placeholder="Envoyer l'Email" required>
@@ -453,6 +533,7 @@
               </div>
             </form>
           </div>
+          -->
         </div>
         <div class="footer_menu">
           <h3 class="footer_menu-title">Liens rapides</h3>
@@ -479,23 +560,23 @@
         <div class="footer_menu">
           <h3 class="footer_menu-title">Social</h3>
           <ul class="footer__menu-list">
-            <li><a href="#">Facebook</a></li>
-            <li><a href="#">Twitter</a></li>
-            <li><a href="#">Instagram</a></li>
-            <li><a href="#">Linkedin</a></li>
+            <li><a href="https://www.facebook.com/profile.php?id=61561361870842&_rdc=1&_rdr" target="_blank">Facebook</a></li>
+            <li><a href="https://x.com/Webbin_services" target="_blank">X</a></li>
+            <li><a href="https://www.instagram.com/_webbin/" target="_blank">Instagram</a></li>
+            <li><a href="#" >Linkedin</a></li>
           </ul>
         </div>
       </div>
       <div class="footer__bottom">
         <div class="footer__bottom-icons">
           <p>Suivez-nous</p>
-          <a href="#" class="facebook">
+          <a href="https://www.facebook.com/profile.php?id=61561361870842&_rdc=1&_rdr" target="_blank" class="facebook">
             <i class="fab fa-facebook-f"></i>
           </a>
-          <a href="#" class="twitter">
-            <i class="fab fa-twitter"></i>
+          <a href="https://x.com/Webbin_services" target="_blank" class="twitter">
+            <i class="fa-brands fa-x-twitter"></i>
           </a>
-          <a href="#" class="instagram">
+          <a href="https://www.instagram.com/_webbin/" target="_blank" class="instagram">
             <i class="fab fa-instagram"></i>
           </a>
           <a href="#" class="linkedin">
